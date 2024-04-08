@@ -1,0 +1,11 @@
+project_ejemplo/mariadb/data/
+test-minikube/
+terraform-example/aws-deploy/.terraform/
+terraform-example/aws-deploy/.terraform.lock.hcl
+terraform-example/aws-deploy/terraform.tfstate
+terraform-example/aws-deploy/terraform.tfstate.backup
+terraform-example/aws-deploy-kmi/
+terraform-example/aws-deploy-database/
+terraform-example/aws-terraform-flask/
+terraform-example/hello-world/
+terraform-example/prueba/

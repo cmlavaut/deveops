@@ -1,0 +1,49 @@
+version: "3"
+
+services:
+ web:
+   build: ./flask
+   container_name: flaskPrueba
+   restart: on-failure
+   volumes:
+     - ./flask/:/home/app
+     - ./database:/home/database
+     - /etc/localtime:/etc/localtime:ro
+   networks:
+     prueba:
+       ipv4_address: 10.10.0.3
+   ports:
+     - 5010:5010
+
+ db:
+    image: mariadb
+    container_name: mariadbPrueba
+    environment:
+      MYSQL_ROOT_PASSWORD: 'cmlavaut96*'
+    volumes:
+      - ./mariadb/data:/var/lib/mysql
+      - ./mariadb/codigo:/var/lib
+    ports:
+      - 3306:3306
+    networks:
+      prueba:
+        ipv4_address: 10.10.0.6
+
+ phpmyadmin:
+    image: phpmyadmin
+    container_name: phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+    networks:
+      prueba:
+        ipv4_address: 10.10.0.7
+
+networks:
+  prueba:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.10.0.0/24 

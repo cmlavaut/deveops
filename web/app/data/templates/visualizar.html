@@ -1,0 +1,16 @@
+{% extends 'base.html'  %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block content %}
+
+<h1> Informacion personal <h1>
+    {% if  parametro == "0" %} 
+       <img src="{{ url_for('static', filename='images/fotokmi.jpg') }}" class="foto" alt="Figura">
+
+
+    {% elif parametro == "1"%}
+        <p> Estudiante de maestria, graduada en Ingenieria en telecomunicaciones y Electronica. Estudia en el centro de investigacion CICATA-Legaria, IPN </p>
+
+    {% endif %}
+
+{% endblock %}

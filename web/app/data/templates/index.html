@@ -1,0 +1,20 @@
+{% extends 'base.html'  %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+
+{% block content %}
+    <h2>mi nombre es Camila Morales Lavaut</h2>
+
+    <label for="opciones">Selecciona una opción:</label>
+   
+    <div class="selector"  >
+        <select id="opciones">
+            <option value="0">Ver foto</option>
+            <option value="1">Ver datos personales</option>
+        </select>
+
+        <button class=" texto" onclick="accionar()">Aceptar</button> 
+    </div>
+    
+<script src= "{{url_for('static', filename='js/index.js')}}"></script>
+{% endblock %}
