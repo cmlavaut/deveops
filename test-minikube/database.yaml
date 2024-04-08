@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: example-database
+  labels: 
+    app: kubernetes-database
+spec: 
+  replicas: 1
+  selector: 
+    matchLabels: 
+      app: kubernetes-database
+  template:
+    metadata: 
+      labels:
+        app: kubernetes-database
+    spec: 
+      containers: 
+      - name: database
+        image: mariadb:latest
+        imagePullPolicy: IfNotPresent
+        env:
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: secret-credentials
+                  key: root_password
+        ports: 
+          - containerPort: 3306
+
+

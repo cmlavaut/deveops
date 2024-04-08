@@ -1,5 +1,5 @@
 project_ejemplo/mariadb/data/
-test-minikube/
+/home/cmlavaut/Documents/DevOps/ansible_labs/webserver1.pem
 terraform-example/aws-deploy/.terraform/
 terraform-example/aws-deploy/.terraform.lock.hcl
 terraform-example/aws-deploy/terraform.tfstate
