@@ -23,4 +23,5 @@ terraform-example/prueba/.terraform
 terraform-example/prueba/.terraform.lock.hcl
 terraform-example/prueba/terraform.tfstate
 terraform-example/prueba/terraform.tfstate.backup
+mongodb docker/dbdata/
 
