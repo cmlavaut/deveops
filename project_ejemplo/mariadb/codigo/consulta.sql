@@ -1,1 +1,0 @@
-SELECT `nombre`, `email` ,` username`, `password` FROM `login` WHERE `login`.`id`= {}

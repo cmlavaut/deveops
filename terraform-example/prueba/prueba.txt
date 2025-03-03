@@ -1,1 +1,0 @@
-Prueba de contenido de texto con terraform
