@@ -15,13 +15,5 @@ terraform-example/aws-deploy-database/terraform.tfstate.backup
 terraform-example/aws-terraform-flask/.terraform.lock.hcl
 terraform-example/aws-deploy-flask/terraform.tfstate
 terraform-example/aws-deploy-flask/terraform.tfstate.backup
-terraform-example/hello-world/.terraform
-terraform-example/hello-world/.terraform.lock.hcl
-terraform-example/hello-world/terraform.tfstate
-terraform-example/hello-world/terraform.tfstate.backup
-terraform-example/prueba/.terraform
-terraform-example/prueba/.terraform.lock.hcl
-terraform-example/prueba/terraform.tfstate
-terraform-example/prueba/terraform.tfstate.backup
-mongodb docker/dbdata/
+
 
